@@ -169,13 +169,14 @@ button, input {
     transition: all .5s;
     overflow: hidden;
     position: relative;
+    text-align: center;
 }
 
 .btn-main:after {
     content: "";
     width: 50px;
     height: 200%;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
     position: absolute;
     top: -50%;
     left: -50%;
@@ -191,11 +192,20 @@ button, input {
     left: 150%;
 }
 
+.btn-main.secondary {
+    background: #441DD1;
+    color: #FFFFFF !important;
+}
+
+.btn-main.secondary:hover {
+    background: #3b19b6;
+}
+
 .hero-image {
     margin-top: 48px;
 }
 
-#services, #testimonials, #cta, #tools {
+#services, #testimonials, #cta, #cta-card, #tools {
     margin-top: 180px;
 }
 
@@ -785,4 +795,165 @@ button, input {
 
 .offer-body {
     color: #C3C3C3;
+}
+
+.why-card {
+    padding: 64px 40px;
+    min-height: 263px;
+}
+
+.why-title {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.why-card div {
+    color: #C3C3C3;
+}
+
+.service-why-brand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.price-tab {
+    flex-wrap: nowrap;
+}
+
+.price-tab li {
+    flex: 0 0 auto;
+    padding: 8px;
+    width: 25%;
+}
+
+.price-tab .nav-link {
+    padding: 16px;
+    border-radius: 8px;
+    background: #000000;
+    box-shadow: inset 0px 0px 20px #3B3E47;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 27px;
+    width: 100%;
+}
+
+.price-tab .nav-link.active, .price-tab .show>.nav-link {
+    background: #3FFFB2;
+    color: #000000;
+    font-weight: 600;
+    box-shadow: inset 0px 0px 20px #FFFFFF;
+}
+
+.price-card {
+    background: #000000;
+    border-radius: 16px;
+    padding: 24px 24px 40px 24px;
+    box-shadow: inset 0px 0px 20px #441DD1;
+}
+
+.price-card h3 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+
+.price-card h3.recommend {
+    background: linear-gradient(90deg, #A88FFF 0%, #441DD1 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-fill-color: transparent; /* For Safari */
+}
+
+.price-card p {
+    color: #C3C3C3;
+    padding-top: 6px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #3B3E47;
+    margin-bottom: 12px;
+}
+
+.price-card .price {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.price-card .price div {
+    font-size: 40px;
+    line-height: 56px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.price-card .price span {
+    color: #C3C3C3;
+    line-height: 56px;
+    display: inline-block;
+}
+
+.price-card ul {
+    padding-left: 0px;
+    list-style: none;
+}
+
+.price-card ul li {
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.price-card ul li:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    background: #441DD1;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    box-shadow: inset 0px 0px 4px #805EFF;
+}
+
+.accordion-faq .accordion-item {
+    padding: 16px 18px;
+    background: #000000;
+    box-shadow: inset 0px 0px 20px #3B3E47;
+    border-radius: 16px;
+    border: none;
+    margin-bottom: 16px;
+}
+
+.accordion-faq .accordion-button {
+    background-color: transparent;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 600;
+    padding: 0px;
+}
+
+.accordion-faq .accordion-button:focus {
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.accordion-faq .accordion-body {
+    padding: 12px 0px 0px 0px;
+    color: #C3C3C3;
+}
+
+.accordion-faq .accordion-button::after {
+    background-image: url("../assets/icons/faq-arrow-bottom.svg");
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+    border-radius: 100px;
 }
