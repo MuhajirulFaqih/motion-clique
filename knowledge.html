@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-    <title>Case Studies | Motion Clique</title>
+    <title>Motion Clique</title>
 
     <link rel="icon" href="assets/fav.png" type="image/png" sizes="16x16"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,7 +34,7 @@
 
 </head>
 <body>
-    <section id="case-studies-hero">
+    <section id="blog-hero">
         <div class="container position-relative z-index-1">
             <div class="row">
                 <div class="col-12">
@@ -60,67 +60,104 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xl-10 offset-xl-1">
-                    <h1 class="hero-title services-title">Discover Our</h1>
-                    <h1 class="hero-title mb-2"><span>Successful Projects</span></h1>
+                <div class="col-xl-10 offset-xl-1 text-center">
+                    <h1 class="hero-title blog-title">Our Blog</h1>
                 </div>
             </div>
         </div>
-        <img src="assets/case-studies-hero.svg" alt="" class="services-hero">
     </section>
-    <section id="case-studies-list">
+    <section id="blog-featured">
         <div class="container">
             <div class="row">
-                <div class="col-xl-10 offset-xl-1">
-                    <div class="row align-items-center mb-case" data-aos="fade-up" data-aos-delay="500">
-                        <div class="col-lg-7">
-                            <img src="assets/case-studies/case-1.png" alt="" class="w-100 case-studies-radius">
-                        </div>
-                        <div class="col-lg-5 ps-lg-4">
-                            <div class="case-content">
+                <div class="col-12">
+                    <h1 class="section-title mb-3 mb-lg-4" data-aos="skew-fade-up" data-aos-delay="300" data-aos-duration="800">Featured <span>Articles</span></h1>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card-blog" data-aos="fade-up" data-aos-delay="500">
+                        <span>E-COMMERCE</span>
+                        <a href="knowledge-detail.html">
+                            <h2>The Power of Animation in E-commerce: Boost Your Sales with Visual Engagement</h2>
+                        </a>
+                        <div class="blog-image" style="background: url('assets/blog/blog-1.png') no-repeat center / cover;"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card-blog"  data-aos="fade-up" data-aos-delay="700">
+                        <span>STARTUPS</span>
+                        <a href="knowledge-detail.html">
+                            <h2>Why Animated Pitch Decks Are a Game-Changer for Startups</h2>
+                        </a>
+                        <div class="blog-image" style="background: url('assets/blog/blog-2.png') no-repeat center / cover;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="blog-list">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex justify-content-center mb-3 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
+                        <button class="filter-button active" data-filter="all">All</button>
+                        <button class="filter-button" data-filter="e-commerce">E-Commerce</button>
+                        <button class="filter-button" data-filter="startups">Startups</button>
+                        <button class="filter-button" data-filter="gaming">Gaming Studio</button>
+                        <button class="filter-button" data-filter="companies">Companies</button>
+                    </div>
+                    <!-- Content Items -->
+                    <div class="row" data-aos="fade-up" data-aos-delay="800">
+                        <div class="col-lg-6 content-item e-commerce">
+                            <div class="card-blog">
                                 <span>E-COMMERCE</span>
-                                <h2>How our animations increased conversions for an online store</h2>
-                                <p>We created interactive product animations that enhanced user engagement and understanding, leading to a significant increase in conversion rates.</p>
-                                <a href="case-studies-detail.html" class="btn-case-more">Explore More</a>
+                                <a href="knowledge-detail.html">
+                                    <h2>The Importance of UI Animations for Seamless User Experience</h2>
+                                </a>
+                                <div class="blog-image" style="background: url('assets/blog/blog-3.png') no-repeat center / cover;"></div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row align-items-center mb-case" data-aos="fade-up" data-aos-delay="500">
-                        <div class="col-lg-7">
-                            <img src="assets/case-studies/case-2.png" alt="" class="w-100 case-studies-radius">
-                        </div>
-                        <div class="col-lg-5 ps-lg-4">
-                            <div class="case-content">
-                                <span>STARTUPS</span>
-                                <h2>The animation of a pitch that raised €1M.</h2>
-                                <p>A dynamic, animated pitch deck helped a startup effectively communicate their value proposition, securing €1 million in funding from investors.</p>
-                                <a href="case-studies-detail.html" class="btn-case-more">Explore More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row align-items-center mb-case" data-aos="fade-up" data-aos-delay="500">
-                        <div class="col-lg-7">
-                            <img src="assets/case-studies/case-3.png" alt="" class="w-100 case-studies-radius">
-                        </div>
-                        <div class="col-lg-5 ps-lg-4">
-                            <div class="case-content">
+                        <div class="col-lg-3 content-item gaming">
+                            <div class="card-blog card-blog-small">
                                 <span>GAMING STUDIOS</span>
-                                <h2>Animated ads that boosted game downloads.</h2>
-                                <p>Our animated social media ads generated excitement around a game release, resulting in a surge of game downloads and player engagement.</p>
-                                <a href="case-studies-detail.html" class="btn-case-more">Explore More</a>
+                                <a href="knowledge-detail.html">
+                                    <h2>Creating Engaging Game Trailer: Best Practices for Gaming Studios</h2>
+                                </a>
+                                <div class="blog-image" style="background: url('assets/blog/blog-4.png') no-repeat center / cover;"></div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row align-items-center mb-case" data-aos="fade-up" data-aos-delay="500">
-                        <div class="col-lg-7">
-                            <img src="assets/case-studies/case-4.png" alt="" class="w-100 case-studies-radius">
+                        <div class="col-lg-3 content-item startups">
+                            <div class="card-blog card-blog-small">
+                                <span>STARTUPS</span>
+                                <a href="knowledge-detail.html">
+                                    <h2>Explainer Videos vs. Infographics: Which is Right for Your Business?</h2>
+                                </a>
+                                <div class="blog-image" style="background: url('assets/blog/blog-5.png') no-repeat center / cover;"></div>
+                            </div>
                         </div>
-                        <div class="col-lg-5 ps-lg-4">
-                            <div class="case-content">
+                        <div class="col-lg-3 content-item gaming">
+                            <div class="card-blog card-blog-small">
+                                <span>GAMING STUDIO</span>
+                                <a href="knowledge-detail.html">
+                                    <h2>3D Animation in Game Development: Creating Realism and Depth</h2>
+                                </a>
+                                <div class="blog-image" style="background: url('assets/blog/blog-6.png') no-repeat center / cover;"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 content-item companies">
+                            <div class="card-blog card-blog-small">
                                 <span>COMPANIES</span>
-                                <h2>Animated financial reports for a corporate client.</h2>
-                                <p>We developed clear and engaging animated financial reports, simplifying complex data for stakeholders and improving internal communication.</p>
-                                <a href="case-studies-detail.html" class="btn-case-more">Explore More</a>
+                                <a href="knowledge-detail.html">
+                                    <h2>Corporate Training with Animated Videos: The Future of Learning</h2>
+                                </a>
+                                <div class="blog-image" style="background: url('assets/blog/blog-7.png') no-repeat center / cover;"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 content-item companies">
+                            <div class="card-blog">
+                                <span>COMPANIES</span>
+                                <a href="knowledge-detail.html">
+                                    <h2>How Explainer Videos Simplify Complex Corporate Processes</h2>
+                                </a>
+                                <div class="blog-image" style="background: url('assets/blog/blog-8.png') no-repeat center / cover;"></div>
                             </div>
                         </div>
                     </div>
@@ -135,12 +172,15 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="cta-container">
-                                <a href="" class="cta-huge-button" data-aos="zoom-in-up" data-aos-delay="500">
-                                    <span class="position-relative z-index-2 text">Schedule a Call</span>
-                                    <span class="circle">
-                                        <img src="assets/cta-arrow.svg" alt="" class="w-100">
-                                    </span>
-                                </a>
+                                <div class="cta-title text-center" data-aos="fade-up" data-aos-delay="500">Got a project?</div>
+                                <div class="cta-container">
+                                    <a href="" class="cta-huge-button main" data-aos="zoom-in-up" data-aos-delay="500">
+                                        <span class="position-relative z-index-2 text">Schedule a Call</span>
+                                        <span class="circle">
+                                            <img src="assets/cta-arrow-green.svg" alt="" class="w-100">
+                                        </span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -210,5 +250,25 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
     <script src="js/app.js"></script>
+    <script>
+         $(document).ready(function() {
+            // Show all items on load
+            $('.content-item').fadeIn();
+
+            // Filter items on button click
+            $('.filter-button').click(function() {
+                $(".filter-button").removeClass("active");
+                $(this).addClass("active");
+                $('.content-item').hide();
+                var category = $(this).data('filter');
+                
+                if (category === 'all') {
+                    $('.content-item').fadeIn();
+                } else {
+                    $('.' + category).fadeIn();
+                }
+            });
+        });
+    </script>
 </body>
 </html>
