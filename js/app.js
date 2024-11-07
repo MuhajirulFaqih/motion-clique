@@ -1,12 +1,13 @@
 (function ($) {
     "use strict";
-    $('.nav-menu-button').click(function () {
-        $('.lingsol-navigation-content').toggleClass('active')
-        $('.nav-menu-button').toggleClass('active')
-        $('.toggle').toggleClass('d-none')
-        $('.close').toggleClass('d-none')
+    $('.toggle-button').click(function () {
+        $('.nav-menu').toggleClass('active')
+        $('.nav-overlay').toggleClass('active')
     })
     AOS.init({offset: 0, duration: 500});
+    if ($(window).width() <= 768) { // Adjust width for mobile breakpoint as needed
+        $('[data-aos]').attr('data-aos-delay', '500');
+    }
 
     $("a[href='#']:not([href='#'])").on("click", function (event) {
         event.preventDefault(); 

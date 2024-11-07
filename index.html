@@ -38,6 +38,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
+                    <div class="nav-overlay"></div>
                     <div class="navigation">
                         <div class="nav-logo">
                             <span>
@@ -46,15 +47,21 @@
                         </div>
                         <div class="nav-menu">
                             <ul>
+                                <li class="text-end d-xl-none"><a href="javascript:void(0);" class="toggle-button"><img src="assets/icons/close.svg" alt=""></a></li>
+                                <li class="d-xl-none"><img src="assets/logo.svg" alt="" class="menu-logo"></li>
                                 <li><a href="index.html" class="active">Home</a></li>
                                 <li><a href="services.html">Services</a></li>
                                 <li><a href="team.html">Team</a></li>
                                 <li><a href="knowledge.html">Knowledge</a></li>
                                 <li><a href="case-studies.html">Case Studies</a></li>
+                                <li class="d-xl-none"><a href="" class="nav-button my-4">Booking Now</a></li>
                             </ul>
                         </div>
                         <div>
-                            <a href="" class="nav-button">Booking Now</a>
+                            <a href="" class="nav-button d-none d-xl-inline-block">Booking Now</a>
+                            <a href="javascript:void(0);" class="toggle-button">
+                                <img src="assets/icons/toggle.svg" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -72,9 +79,9 @@
             </div>
         </div>
         <img src="assets/homepage-hero.png" alt="" class="homepage-hero">
-        <img src="assets/homepage-solid-hero.png" alt="" class="homepage-solid-bg">
+        <img src="assets/homepage-solid-hero.png" alt="" class="homepage-solid-bg d-none d-lg-inline-block">
+        <img src="assets/homepage-solid-hero-mobile.png" alt="" class="homepage-solid-bg d-inline-block d-lg-none">
     </section>
-
     <section id="services">
         <div class="container">
             <div class="row">
@@ -86,7 +93,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-7 mb-lg-3 px-2">
+                        <div class="col-md-6 col-lg-7 mb-3 px-2">
                             <div class="services-card" data-aos="fade-up" data-aos-delay="500">
                                 <div class="services-graphic">
                                     <dotlottie-player src="json/e-commerce.lottie" class="overlay" background="transparent" speed="1" loop autoplay></dotlottie-player>
@@ -97,7 +104,7 @@
                                 </h2>
                             </div>
                         </div>
-                        <div class="col-lg-5 mb-lg-3 px-2">
+                        <div class="col-md-6 col-lg-5 mb-3 px-2">
                             <div class="services-card h-100" id="startups" data-aos="fade-up" data-aos-delay="800">
                                 <div class="services-graphic text-center">
                                     <div class="pill-card pill-1">
@@ -121,7 +128,7 @@
                                 </h2>
                             </div>
                         </div>
-                        <div class="col-lg-6 mb-lg-3 px-2">
+                        <div class="col-md-6 col-lg-6 mb-3 px-2">
                             <div class="services-card bg-main overflow-hidden" data-aos="fade-up" data-aos-delay="500">
                                 <div class="services-graphic position-relative">
                                     <img src="assets/gaming-studio.png" alt="" class="w-100 gaming-image position-relative z-index-2">
@@ -132,7 +139,7 @@
                                 </h2>
                             </div>
                         </div>
-                        <div class="col-lg-6 mb-lg-3 px-2">
+                        <div class="col-md-6 col-lg-6 mb-3 px-2">
                             <div class="services-card h-100" data-aos="fade-up" data-aos-delay="800">
                                 <div class="services-graphic">
                                     <img src="assets/companies.png" alt="" class="w-100">
@@ -152,10 +159,10 @@
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">
                     <div class="row align-items-center">
-                        <div class="col-lg-8">
+                        <div class="col-md-8 text-center text-md-start">
                             <h1 class="section-title" data-aos="skew-fade-up" data-aos-delay="500" data-aos-duration="800">Client <span>Testimonials</span></h1>
                         </div>
-                        <div class="col-lg-4 text-lg-end">
+                        <div class="col-md-4 text-md-end d-none d-md-flex">
                             <a href="javascript:void(0);" class="owl-testimonials-arrow left mx-2" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="800">
                                 <img src="assets/icons/arrow-left.svg" class="w-100" alt="">
                             </a>
@@ -219,6 +226,14 @@
                             <div class="testimonial-overlay-start"></div>
                             <div class="testimonial-overlay-end"></div>
                         </div>
+                        <div class="col-12 text-center d-md-none pt-4">
+                            <a href="javascript:void(0);" class="owl-testimonials-arrow left mx-2" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="800">
+                                <img src="assets/icons/arrow-left.svg" class="w-100" alt="">
+                            </a>
+                            <a href="javascript:void(0);" class="owl-testimonials-arrow right mx-2" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="800">
+                                <img src="assets/icons/arrow-right.svg" class="w-100" alt="">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -231,9 +246,9 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="cta-box text-center" id="cta-box">
-                                <h1 class="section-title text-center" data-aos="skew-fade-up" data-aos-delay="500">Discover <span class="cta-rotate">Dynamic Animation</span></h1>
-                                <h1 class="section-title text-center mb-3 mt-lg-4" data-aos="skew-fade-up" data-aos-delay="800">Can Transform Your Projects</h1>
-                                <a href="" class="btn-main" data-aos="zoom-in-up" data-aos-delay="1000">Discover Our Services</a>
+                                <h1 class="section-title text-center position-relative z-index-1 data-aos="skew-fade-up" data-aos-delay="500">Discover <span class="cta-rotate">Dynamic Animation</span></h1>
+                                <h1 class="section-title text-center mb-3 mt-lg-4 position-relative z-index-1" data-aos="skew-fade-up" data-aos-delay="800">Can Transform Your Projects</h1>
+                                <a href="" class="btn-main position-relative z-index-1" data-aos="zoom-in-up" data-aos-delay="1000">Discover Our Services</a>
                             </div>
                         </div>
                     </div>
@@ -296,10 +311,10 @@
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">
                     <div class="row align-items-center">
-                        <div class="col-3 pe-lg-4">
+                        <div class="col-3 pe-lg-4 d-none d-lg-flex">
                             <dotlottie-player src="json/footer.lottie" class="w-100" background="transparent" speed="0.8" loop autoplay></dotlottie-player>
                         </div>
-                        <div class="col-9">
+                        <div class="col-12 col-lg-9">
                             <div class="row">
                                 <div class="col-lg-10">
                                     <div class="footer-logo"><img src="assets/logo.svg" alt="" class="w-100"></div>
