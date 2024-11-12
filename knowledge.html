@@ -38,6 +38,7 @@
         <div class="container position-relative z-index-1">
             <div class="row">
                 <div class="col-12">
+                    <div class="nav-overlay"></div>
                     <div class="navigation">
                         <div class="nav-logo">
                             <span>
@@ -46,15 +47,21 @@
                         </div>
                         <div class="nav-menu">
                             <ul>
+                                <li class="text-end d-lg-none"><a href="javascript:void(0);" class="toggle-button"><img src="assets/icons/close.svg" alt=""></a></li>
+                                <li class="d-lg-none"><img src="assets/logo.svg" alt="" class="menu-logo"></li>
                                 <li><a href="index.html">Home</a></li>
-                                <li><a href="services.html" class="active">Services</a></li>
+                                <li><a href="services.html">Services</a></li>
                                 <li><a href="team.html">Team</a></li>
-                                <li><a href="knowledge.html">Knowledge</a></li>
+                                <li><a href="knowledge.html" class="active">Knowledge</a></li>
                                 <li><a href="case-studies.html">Case Studies</a></li>
+                                <li class="d-lg-none"><a href="booking.html" class="nav-button my-4">Booking Now</a></li>
                             </ul>
                         </div>
                         <div>
-                            <a href="" class="nav-button">Booking Now</a>
+                            <a href="booking.html" class="nav-button d-none d-lg-inline-block">Booking Now</a>
+                            <a href="javascript:void(0);" class="toggle-button">
+                                <img src="assets/icons/toggle.svg" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -72,16 +79,16 @@
                 <div class="col-12">
                     <h1 class="section-title mb-3 mb-lg-4" data-aos="skew-fade-up" data-aos-delay="300" data-aos-duration="800">Featured <span>Articles</span></h1>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-md-6">
                     <div class="card-blog" data-aos="fade-up" data-aos-delay="500">
                         <span>E-COMMERCE</span>
                         <a href="knowledge-detail.html">
-                            <h2>The Power of Animation in E-commerce: Boost Your Sales with Visual Engagement</h2>
+                            <h2>The Power of Animation: Boost Sales with Visual Engagement</h2>
                         </a>
                         <div class="blog-image" style="background: url('assets/blog/blog-1.png') no-repeat center / cover;"></div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-md-6">
                     <div class="card-blog"  data-aos="fade-up" data-aos-delay="700">
                         <span>STARTUPS</span>
                         <a href="knowledge-detail.html">
@@ -97,7 +104,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="d-flex justify-content-center mb-3 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="d-flex flex-wrap flex-xl-nowrap justify-content-center mb-3 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
                         <button class="filter-button active" data-filter="all">All</button>
                         <button class="filter-button" data-filter="e-commerce">E-Commerce</button>
                         <button class="filter-button" data-filter="startups">Startups</button>
@@ -106,7 +113,7 @@
                     </div>
                     <!-- Content Items -->
                     <div class="row" data-aos="fade-up" data-aos-delay="800">
-                        <div class="col-lg-6 content-item e-commerce">
+                        <div class="col-md-6 content-item e-commerce">
                             <div class="card-blog">
                                 <span>E-COMMERCE</span>
                                 <a href="knowledge-detail.html">
@@ -115,43 +122,51 @@
                                 <div class="blog-image" style="background: url('assets/blog/blog-3.png') no-repeat center / cover;"></div>
                             </div>
                         </div>
-                        <div class="col-lg-3 content-item gaming">
+                        <div class="col-md-6 col-xl-3 content-item gaming">
                             <div class="card-blog card-blog-small">
-                                <span>GAMING STUDIOS</span>
-                                <a href="knowledge-detail.html">
-                                    <h2>Creating Engaging Game Trailer: Best Practices for Gaming Studios</h2>
-                                </a>
+                                <div class="blog-small-capt">
+                                    <span>GAMING STUDIOS</span>
+                                    <a href="knowledge-detail.html">
+                                        <h2>Creating Engaging Game Trailer: Best Practices for Gaming Studios</h2>
+                                    </a>
+                                </div>
                                 <div class="blog-image" style="background: url('assets/blog/blog-4.png') no-repeat center / cover;"></div>
                             </div>
                         </div>
-                        <div class="col-lg-3 content-item startups">
+                        <div class="col-md-6 col-xl-3 content-item startups">
                             <div class="card-blog card-blog-small">
-                                <span>STARTUPS</span>
-                                <a href="knowledge-detail.html">
-                                    <h2>Explainer Videos vs. Infographics: Which is Right for Your Business?</h2>
-                                </a>
+                                <div class="blog-small-capt">
+                                    <span>STARTUPS</span>
+                                    <a href="knowledge-detail.html">
+                                        <h2>Explainer Videos vs. Infographics: Which is Right for Your Business?</h2>
+                                    </a>
+                                </div>
                                 <div class="blog-image" style="background: url('assets/blog/blog-5.png') no-repeat center / cover;"></div>
                             </div>
                         </div>
-                        <div class="col-lg-3 content-item gaming">
+                        <div class="col-md-6 col-xl-3 content-item gaming">
                             <div class="card-blog card-blog-small">
-                                <span>GAMING STUDIO</span>
-                                <a href="knowledge-detail.html">
-                                    <h2>3D Animation in Game Development: Creating Realism and Depth</h2>
-                                </a>
+                                <div class="blog-small-capt">
+                                    <span>GAMING STUDIO</span>
+                                    <a href="knowledge-detail.html">
+                                        <h2>3D Animation in Game Development: Creating Realism</h2>
+                                    </a>
+                                </div>
                                 <div class="blog-image" style="background: url('assets/blog/blog-6.png') no-repeat center / cover;"></div>
                             </div>
                         </div>
-                        <div class="col-lg-3 content-item companies">
+                        <div class="col-md-6 col-xl-3 content-item companies">
                             <div class="card-blog card-blog-small">
-                                <span>COMPANIES</span>
-                                <a href="knowledge-detail.html">
-                                    <h2>Corporate Training with Animated Videos: The Future of Learning</h2>
-                                </a>
+                                <div class="blog-small-capt">
+                                    <span>COMPANIES</span>
+                                    <a href="knowledge-detail.html">
+                                        <h2>Corporate Training with Animated Videos: The Future of Learning</h2>
+                                    </a>
+                                </div>
                                 <div class="blog-image" style="background: url('assets/blog/blog-7.png') no-repeat center / cover;"></div>
                             </div>
                         </div>
-                        <div class="col-lg-6 content-item companies">
+                        <div class="col-md-6 content-item companies">
                             <div class="card-blog">
                                 <span>COMPANIES</span>
                                 <a href="knowledge-detail.html">
@@ -174,7 +189,7 @@
                             <div class="cta-container">
                                 <div class="cta-title text-center" data-aos="fade-up" data-aos-delay="500">Got a project?</div>
                                 <div class="cta-container">
-                                    <a href="" class="cta-huge-button main" data-aos="zoom-in-up" data-aos-delay="500">
+                                    <a href="booking.html" class="cta-huge-button main" data-aos="zoom-in-up" data-aos-delay="500">
                                         <span class="position-relative z-index-2 text">Schedule a Call</span>
                                         <span class="circle">
                                             <img src="assets/cta-arrow-green.svg" alt="" class="w-100">
@@ -193,10 +208,10 @@
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">
                     <div class="row align-items-center">
-                        <div class="col-3 pe-lg-4">
+                        <div class="col-3 pe-lg-4 d-none d-lg-flex">
                             <dotlottie-player src="json/footer.lottie" class="w-100" background="transparent" speed="0.8" loop autoplay></dotlottie-player>
                         </div>
-                        <div class="col-9">
+                        <div class="col-12 col-lg-9">
                             <div class="row">
                                 <div class="col-lg-10">
                                     <div class="footer-logo"><img src="assets/logo.svg" alt="" class="w-100"></div>
@@ -207,20 +222,19 @@
                                 <div class="col-4">
                                     <h3 class="footer-link-title">Industries</h3>
                                     <div class="footer-link">
-                                        <a href="">E-commerce</a>
-                                        <a href="">Startups</a>
-                                        <a href="">Gaming Studios</a>
-                                        <a href="">Companies</a>
+                                        <a href="e-commerce.html">E-commerce</a>
+                                        <a href="startups.html">Startups</a>
+                                        <a href="gaming-studio.html">Gaming Studios</a>
+                                        <a href="companies.html">Companies</a>
                                     </div>
                                 </div>
                                 <div class="col-4">
                                     <h3 class="footer-link-title">Pages</h3>
                                     <div class="footer-link">
-                                        <a href="">Services</a>
-                                        <a href="">Price</a>
-                                        <a href="">Team</a>
-                                        <a href="">Knowledge</a>
-                                        <a href="">Case Studies</a>
+                                        <a href="services.html">Services</a>
+                                        <a href="team.html">Team</a>
+                                        <a href="knowledge.html">Knowledge</a>
+                                        <a href="case-studies.html">Case Studies</a>
                                     </div>
                                 </div>
                                 <div class="col-4">

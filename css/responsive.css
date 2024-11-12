@@ -2,6 +2,17 @@
     .container {
         max-width: 1200px;
     }
+    .team-card-opener h1 {
+        text-align: center;
+        display: block;
+        left: 0;
+        right: 0;
+    }
+
+    .cs-details-content h1 {
+        font-size: 36px;
+        line-height: 54px;
+    }
 }
 @media (max-width: 1199.98px){
     .container {
@@ -11,6 +22,45 @@
     .testimonial-inner {
         height: 260px;    
     }
+
+    .price-tab .nav-link {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 12px 8px;
+    }
+
+    .price-card .price div {
+        font-size: 32px;
+    }
+    
+    .team-card-opener {
+        padding: 120px 32px 32px 32px;
+    }
+
+    .team-card-opener h1 {
+        font-size: 120px;
+    }
+
+    .team-card-opener p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+    .card-blog h2 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .card-blog.card-blog-small h2 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .case-content h2 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
 }
 @media (max-width: 991.98px) {
     .container {
@@ -76,6 +126,168 @@
         width: 200px;
         display: inline-block;
     }
+
+    .section-description {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .footer-title {
+        font-size: 24px;
+    }
+
+    #services-hero, #team-hero, #case-studies-hero {
+        min-height: 500px;
+    }
+
+    .services-title {
+        padding-top: 32px;
+    }
+
+    .service-opener {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .services-card-item {
+        padding: 12px;
+        border-radius: 8px;
+    }
+
+    .services-card-item h2 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    #e-commerce-hero, #startups-hero, #gaming-studio-hero #companies-hero {
+        min-height: 520px;
+    }
+    
+    .e-commerce-hero {
+        height: 380px;
+    }
+
+    .offer-title {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .why-card {
+        padding: 0px;
+        min-height: auto;
+        margin-bottom: 20px;
+    }
+
+    .why-title {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 4px;
+    }
+
+    #blog-hero {
+        min-height: 480px;
+    }
+
+    .blog-title {
+        margin-top: 56px;
+        font-size: 56px;
+    }
+
+    .blog-title:after {
+        top: -45px;
+    }
+
+    .card-blog h2, .card-blog.card-blog-small h2 {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+
+    .filter-button {
+        width: 25%;
+    }
+
+    .blog-attribute {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .share-social a {
+        padding: 8px;
+    }
+
+    .blog-content-title {
+        font-size: 32px;
+        line-height: 120%;
+    }
+
+    .case-content span {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .case-content p {
+        margin-bottom: 16px;
+    }
+
+    .mb-case {
+        margin-bottom: 32px;
+    }
+    
+    .btn-case-more {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 12px 24px;
+    }
+
+    .cs-details-content span {
+        margin: 0px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .cs-details-content h1 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    #cs-about p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .cs-content-icon {
+        width: 40px;
+    }
+
+    .cs-icons h3 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .cs-icons-body {
+        font-size: 16px;
+        line-height: 27px;
+    }
+
+    .result-card span {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .cs-icons h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .cs-testimony-body {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .cs-icons {
+        margin-bottom: 56px;
+    }
 }
 @media (max-width: 800.98px) {
     body {
@@ -84,6 +296,16 @@
     }    
     .container {
         max-width: 700px;
+    }
+    .ps-service-gaming {
+        padding-left: calc(var(--bs-gutter-x)* .5);
+    }
+    .pe-service-gaming {
+        padding-right: calc(var(--bs-gutter-x)* .5);
+    }
+
+    .team-card-opener .opener-line span {
+        width: 100%;
     }
 }
 @media (max-width: 575.98px) {
@@ -121,7 +343,7 @@
     }
 
     #services, #testimonials, #cta, #cta-card, #tools {
-        margin-top: 80px;
+        margin-top: 64px;
     }
 
     .section-title {
@@ -157,7 +379,7 @@
     }
 
     .section-title span {
-        margin: 24px 0px;
+        margin: 8px 0px;
     }
 
     .cta-box:after {
@@ -188,6 +410,300 @@
 
     .footer-title {
         font-size: 20px;
+    }
+
+    .services-hero {
+        height: auto;
+        width: 100%;   
+    }
+
+    #services-hero, #team-hero, #case-studies-hero {
+        min-height: 540px;
+    }
+
+    .services-title {
+        padding-top: 0px;
+    }
+
+    .sub-section-title {
+        font-size: 32px;
+    }
+
+    .e-commerce-hero {
+        height: auto;
+        width: 100%;
+    }
+    
+    .price-tab {
+        display: block;
+    }
+    
+    .price-tab li, .price-tab.startups li, .price-tab.startups li.w-more {
+        width: 100%;
+        padding: 4px 0px;
+    }
+
+    .price-card {
+        padding: 16px 16px 24px 16px;
+        margin-bottom: 16px;
+    }
+
+    .price-card h3 {
+        font-size: 18px;
+        line-height: 27px;
+    }
+    
+    .price-card ul li {
+        margin-bottom: 8px;
+    }
+
+    .accordion-faq .accordion-button {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .team-card-opener h1 {
+        font-size: 64px;
+    }
+
+    .team-card-opener {
+        padding: 40px 16px 24px 16px;
+    }
+
+    .team-card-opener p {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .card-shoot {
+        border-radius: 8px;
+        padding: 8px;
+    }
+
+    .card-shoot img {
+        border-radius: 8px;
+    }
+
+    .members-name {
+        margin-top: 16px;
+        font-size: 16px;
+        margin-bottom: 4px;
+    }
+
+    .members-title {
+        margin-bottom: 14px;
+    }
+
+    .cta-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .filter-button {
+        width: 100%;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 12px;
+        margin-bottom: 4px;
+    }
+
+    .card-blog-small {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        margin-bottom: 16px;
+    }
+
+    .blog-small-capt {
+        width: 80%;
+    }
+
+    .card-blog-small .blog-image {
+        width: 40%;
+        margin-right: 16px;
+        height: 116px;
+        border-radius: 8px;
+    }
+
+    .card-blog h2, .card-blog.card-blog-small h2 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .card-blog span {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .blog-image {
+        height: 168px;
+        border-radius: 8px;
+    }
+
+    .card-blog {
+        margin-bottom: 20px;
+    }
+
+    #blog-list, #blog-featured {
+        margin-top: 64px;
+    }
+
+    .blog-content-title {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+
+    .blog-content-image {
+        margin-bottom: 20px;
+    }
+
+    .blog-content p.large {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .blog-content h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .blog-content h1 {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    #blog-others {
+        margin-top: 64px;
+    }
+
+    .case-content {
+        margin-bottom: 32px;
+    }
+
+    .case-content span {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .case-content h2 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .case-content p {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .btn-case-more {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .cs-details-content span {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .cs-details-content h1 {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+
+    #cs-about p {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .cs-content-icon {
+        width: 32px;
+    }
+
+    .cs-icons h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .cs-icons-body {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .result-card span {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .cs-icons h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .result-card-1 .result-card-header h1 {
+        font-size: 32px;
+    }
+    
+    #cs-testimony {
+        margin-top: 32px;
+    }
+
+    .cs-testimony {
+        padding: 12px;
+        border-radius: 12px;
+    }
+
+    .cs-testimony-avatar img {
+        width: 56px;
+    }
+
+    .cs-testimony-avatar h5 {
+        font-size: 18px;
+    }
+
+    .cs-testimony-avatar div span {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .cs-testimony-quote {
+        width: 48px;
+    }
+
+    .cs-testimony-body {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 16px;
+    }
+
+    .gt-icon {
+        padding: 10px;
+    }
+    
+    .gt-form {
+        padding: 20px 24px 20px 20px;
+        box-shadow: inset 0px 0px 24px #3B3E47;
+        border-radius: 16px;
+    }
+    
+    .gt-form h2 {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 20px;
+    }
+    
+    .gt-input {
+        margin-bottom: 16px;
+    }
+    
+    .gt-input label {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .gt-input input, .gt-input textarea {
+        padding: 14px 20px;
     }
 }
 @media (max-width: 360px) {

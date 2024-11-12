@@ -6,7 +6,7 @@
     })
     AOS.init({offset: 0, duration: 500});
     if ($(window).width() <= 768) { // Adjust width for mobile breakpoint as needed
-        $('[data-aos]').attr('data-aos-delay', '500');
+        $('[data-aos]').attr('data-aos-delay', '200');
     }
 
     $("a[href='#']:not([href='#'])").on("click", function (event) {

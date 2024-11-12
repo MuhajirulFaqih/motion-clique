@@ -38,6 +38,7 @@
         <div class="container position-relative z-index-1">
             <div class="row">
                 <div class="col-12">
+                    <div class="nav-overlay"></div>
                     <div class="navigation">
                         <div class="nav-logo">
                             <span>
@@ -46,32 +47,38 @@
                         </div>
                         <div class="nav-menu">
                             <ul>
+                                <li class="text-end d-lg-none"><a href="javascript:void(0);" class="toggle-button"><img src="assets/icons/close.svg" alt=""></a></li>
+                                <li class="d-lg-none"><img src="assets/logo.svg" alt="" class="menu-logo"></li>
                                 <li><a href="index.html">Home</a></li>
-                                <li><a href="services.html" class="active">Services</a></li>
+                                <li><a href="services.html">Services</a></li>
                                 <li><a href="team.html">Team</a></li>
                                 <li><a href="knowledge.html">Knowledge</a></li>
-                                <li><a href="case-studies.html">Case Studies</a></li>
+                                <li><a href="case-studies.html" class="active">Case Studies</a></li>
+                                <li class="d-lg-none"><a href="booking.html" class="nav-button my-4">Booking Now</a></li>
                             </ul>
                         </div>
                         <div>
-                            <a href="" class="nav-button">Booking Now</a>
+                            <a href="booking.html" class="nav-button d-none d-lg-inline-block">Booking Now</a>
+                            <a href="javascript:void(0);" class="toggle-button">
+                                <img src="assets/icons/toggle.svg" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">
-                    <div class="row">
-                        <div class="col-lg-6 cs-details-content">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 cs-details-content">
                             <div class="breadcrumbs services-title pt-0" data-aos="fade-up">
-                                <a href="">Case Studies</a>
+                                <a href="case-studies.html">Case Studies</a>
                                 <span>/</span>
                                 <a href="javascript:void(0);" class="active">Explore</a>
                             </div>
                             <span data-aos="fade-up" data-aos-delay="300">E-COMMERCE</span>
                             <h1 data-aos="fade-up" data-aos-delay="500">How our animations increased conversions for an online store</h1>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-md-6">
                             <img src="assets/case-studies/case-1.png" alt="" class="w-100 cs-image" data-aos="fade-up" data-aos-delay="800">
                         </div>
                     </div>
@@ -82,7 +89,7 @@
     <section id="cs-about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 offset-lg-2 text-center" data-aos="fade-up" data-aos-delay="500">
+                <div class="col-md-10 offset-md-1 col-xl-8 offset-xl-2 text-center" data-aos="fade-up" data-aos-delay="500">
                     <img src="assets/case-studies-brand.png" alt="" class="cs-logo mb-3">
                     <p>We created interactive product animations that enhanced user engagement and understanding, leading to a significant increase in conversion rates.</p>
                 </div>
@@ -92,33 +99,33 @@
     <section id="cs-content">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 offset-lg-1">
+                <div class="col-xl-10 offset-xl-1">
                     <div class="row cs-icons">
-                        <div class="col-lg-6">
-                            <div class="cs-icons-title" data-aos="skew-fade-up" data-aos-delay="500">
+                        <div class="col-md-6">
+                            <div class="cs-icons-title mb-3" data-aos="skew-fade-up" data-aos-delay="500">
                                 <img src="assets/icons/challenge.svg" alt="" class="cs-content-icon">
                                 <h3>Challenge</h3>
                             </div>
                         </div>
-                        <div class="col-lg-6 cs-icons-body" data-aos="fade-up" data-aos-delay="700">Fashion Forward, a growing online retailer, struggled with low conversion rates despite high website traffic. Customers were visiting product pages but often left without making a purchase. The issue was that static product images and descriptions weren’t fully capturing the features and benefits of the products, leaving customers uncertain about their buying decisions.</div>
+                        <div class="col-md-6 cs-icons-body" data-aos="fade-up" data-aos-delay="700">Fashion Forward, a growing online retailer, struggled with low conversion rates despite high website traffic. Customers were visiting product pages but often left without making a purchase. The issue was that static product images and descriptions weren’t fully capturing the features and benefits of the products, leaving customers uncertain about their buying decisions.</div>
                     </div>
                     <div class="row cs-icons">
-                        <div class="col-lg-6">
-                            <div class="cs-icons-title" data-aos="skew-fade-up" data-aos-delay="500">
+                        <div class="col-md-6">
+                            <div class="cs-icons-title mb-3" data-aos="skew-fade-up" data-aos-delay="500">
                                 <img src="assets/icons/solution.svg" alt="" class="cs-content-icon">
                                 <h3>Solution</h3>
                             </div>
                         </div>
-                        <div class="col-lg-6 cs-icons-body" data-aos="fade-up" data-aos-delay="700">We developed a series of interactive product animations that showcased key product features, such as 360-degree views and animated product highlights. These animations allowed customers to see the products in action, providing a more dynamic and informative shopping experience. By adding movement to otherwise static pages, the animations drew attention and kept users engaged longer.</div>
+                        <div class="col-md-6 cs-icons-body" data-aos="fade-up" data-aos-delay="700">We developed a series of interactive product animations that showcased key product features, such as 360-degree views and animated product highlights. These animations allowed customers to see the products in action, providing a more dynamic and informative shopping experience. By adding movement to otherwise static pages, the animations drew attention and kept users engaged longer.</div>
                     </div>
                     <div class="row cs-icons">
-                        <div class="col-lg-6">
-                            <div class="cs-icons-title" data-aos="skew-fade-up" data-aos-delay="500">
+                        <div class="col-md-6">
+                            <div class="cs-icons-title mb-3" data-aos="skew-fade-up" data-aos-delay="500">
                                 <img src="assets/icons/result.svg" alt="" class="cs-content-icon">
                                 <h3>Results</h3>
                             </div>
                         </div>
-                        <div class="col-lg-6" id="result-card-outline">
+                        <div class="col-md-6" id="result-card-outline">
                             <div class="result-card-outline">
                                 <div class="result-card result-card-1" data-aos="fade-up" data-aos-delay="700">
                                     <div class="result-card-header">
@@ -149,7 +156,7 @@
     <section id="cs-testimony">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 offset-lg-1">
+                <div class="col-md-10 offset-md-1 col-xl-8 offset-xl-2">
                     <div class="cs-testimony" data-aos="fade-up" data-aos-delay="500">
                         <div class="cs-testimony-header">
                             <div class="row align-items-center">
@@ -180,10 +187,10 @@
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">
                     <div class="row align-items-center">
-                        <div class="col-3 pe-lg-4">
+                        <div class="col-3 pe-lg-4 d-none d-lg-flex">
                             <dotlottie-player src="json/footer.lottie" class="w-100" background="transparent" speed="0.8" loop autoplay></dotlottie-player>
                         </div>
-                        <div class="col-9">
+                        <div class="col-12 col-lg-9">
                             <div class="row">
                                 <div class="col-lg-10">
                                     <div class="footer-logo"><img src="assets/logo.svg" alt="" class="w-100"></div>
@@ -194,20 +201,19 @@
                                 <div class="col-4">
                                     <h3 class="footer-link-title">Industries</h3>
                                     <div class="footer-link">
-                                        <a href="">E-commerce</a>
-                                        <a href="">Startups</a>
-                                        <a href="">Gaming Studios</a>
-                                        <a href="">Companies</a>
+                                        <a href="e-commerce.html">E-commerce</a>
+                                        <a href="startups.html">Startups</a>
+                                        <a href="gaming-studio.html">Gaming Studios</a>
+                                        <a href="companies.html">Companies</a>
                                     </div>
                                 </div>
                                 <div class="col-4">
                                     <h3 class="footer-link-title">Pages</h3>
                                     <div class="footer-link">
-                                        <a href="">Services</a>
-                                        <a href="">Price</a>
-                                        <a href="">Team</a>
-                                        <a href="">Knowledge</a>
-                                        <a href="">Case Studies</a>
+                                        <a href="services.html">Services</a>
+                                        <a href="team.html">Team</a>
+                                        <a href="knowledge.html">Knowledge</a>
+                                        <a href="case-studies.html">Case Studies</a>
                                     </div>
                                 </div>
                                 <div class="col-4">

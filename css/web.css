@@ -258,6 +258,7 @@ button, input {
 
 .services-graphic {
     position: relative;
+    overflow: hidden;
 }
 
 .services-graphic > img {
@@ -267,9 +268,11 @@ button, input {
     margin-bottom: 20px;
 }
 
-.services-graphic .gaming-image {
-    animation: zoomRotate 5s ease-in-out infinite;
-    animation-delay: 1.5s;
+.services-graphic > video {
+    position: relative;
+    border-radius: 12px;
+    z-index: 1;
+    margin-bottom: 20px;
 }
 
 .services-graphic .gaming-overlay {
@@ -286,6 +289,10 @@ button, input {
     transform: translate(-50%, -50%);
     height: 100%;
     z-index: 2;
+}
+
+.bg-gaming {
+    background: #452cd8;
 }
 
 .pill-1, .pill-2, .pill-3 {
@@ -806,6 +813,11 @@ button, input {
     margin-bottom: 12px;
 }
 
+.offer-icon-outer.green {
+    background: #23DD93;
+    box-shadow: inset 0px 0px 11px #FFFFFF;
+}
+
 .offer-icon {
     width: 24px;
 }
@@ -853,6 +865,18 @@ button, input {
     flex: 0 0 auto;
     padding: 8px;
     width: 25%;
+}
+
+.price-tab.startups {
+    flex-wrap: wrap;
+}
+
+.price-tab.startups li {
+    width: 33.3333%;
+}
+
+.price-tab.startups li.w-more {
+    width: 50%;
 }
 
 .price-tab.column-5 li {
@@ -1472,4 +1496,87 @@ button, input {
 
 #blog-others {
     margin-top: 120px;
+}
+
+/* Contact Us */
+
+
+#get-touch {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+#get-touch .container {
+    position: relative;
+    z-index: 2;
+}
+
+.gt-contact {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.gt-icon {
+    display: inline-block;
+    padding: 12px;
+    border-radius: 80px;
+    background: #23DD93;
+    box-shadow: inset 0px 0px 11px #FFFFFF;
+}
+
+.gt-icon img {
+    width: 24px;
+}
+
+.gt-form {
+    padding: 40px 32px 72px 32px;
+    background: #000000;
+    box-shadow: inset 0px 0px 40px #3B3E47;
+    border-radius: 24px;
+    margin-bottom: 32px;
+}
+
+.gt-form h2 {
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+.gt-input {
+    margin-bottom: 24px;
+}
+
+.gt-input label {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 8px;
+}
+
+.gt-input input, .gt-input textarea {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    background: #141414;
+    color: #FFFFFF;
+    padding: 14px 20px;
+    width: 100%;
+    display: block;
+}
+
+.gt-input input:focus, .gt-input textarea:focus {
+    box-shadow: 0px 0px 0px 1px #23DD93;
+}
+
+.gt-input input {
+    border-radius: 80px;
+}
+
+.gt-input textarea {
+    border-radius: 8px;
+    min-height: 108px;
 }

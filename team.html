@@ -39,6 +39,7 @@
         <div class="container position-relative z-index-1">
             <div class="row">
                 <div class="col-12">
+                    <div class="nav-overlay"></div>
                     <div class="navigation">
                         <div class="nav-logo">
                             <span>
@@ -47,15 +48,21 @@
                         </div>
                         <div class="nav-menu">
                             <ul>
+                                <li class="text-end d-lg-none"><a href="javascript:void(0);" class="toggle-button"><img src="assets/icons/close.svg" alt=""></a></li>
+                                <li class="d-lg-none"><img src="assets/logo.svg" alt="" class="menu-logo"></li>
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="services.html">Services</a></li>
                                 <li><a href="team.html" class="active">Team</a></li>
                                 <li><a href="knowledge.html">Knowledge</a></li>
                                 <li><a href="case-studies.html">Case Studies</a></li>
+                                <li class="d-lg-none"><a href="booking.html" class="nav-button my-4">Booking Now</a></li>
                             </ul>
                         </div>
                         <div>
-                            <a href="" class="nav-button">Booking Now</a>
+                            <a href="booking.html" class="nav-button d-none d-lg-inline-block">Booking Now</a>
+                            <a href="javascript:void(0);" class="toggle-button">
+                                <img src="assets/icons/toggle.svg" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -84,7 +91,7 @@
         <div class="container">
             <div class="col-lg-10 offset-lg-1">
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-6 p-1 p-md-3 col-lg-4">
                         <div class="card-members" data-aos="fade-up">
                             <div class="card-shoot">
                                 <img src="assets/team/team-1.png" alt="" class="w-100 position-relative z-index-1">
@@ -94,7 +101,7 @@
                             <div class="members-title">Creative Director</div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-6 p-1 p-md-3 col-lg-4">
                         <div class="card-members" data-aos="fade-up" data-aos-delay="200">
                             <div class="card-shoot">
                                 <img src="assets/team/team-2.png" alt="" class="w-100 position-relative z-index-1">
@@ -104,7 +111,7 @@
                             <div class="members-title">Lead Animator</div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-6 p-1 p-md-3 col-lg-4">
                         <div class="card-members" data-aos="fade-up" data-aos-delay="400">
                             <div class="card-shoot">
                                 <img src="assets/team/team-3.png" alt="" class="w-100 position-relative z-index-1">
@@ -114,7 +121,7 @@
                             <div class="members-title">Project Manager</div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-6 p-1 p-md-3 col-lg-4">
                         <div class="card-members" data-aos="fade-up" data-aos-delay="600">
                             <div class="card-shoot">
                                 <img src="assets/team/team-4.png" alt="" class="w-100 position-relative z-index-1">
@@ -124,7 +131,7 @@
                             <div class="members-title">UI/UX Animator</div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-6 p-1 p-md-3 col-lg-4">
                         <div class="card-members" data-aos="fade-up" data-aos-delay="800">
                             <div class="card-shoot">
                                 <img src="assets/team/team-5.png" alt="" class="w-100 position-relative z-index-1">
@@ -134,7 +141,7 @@
                             <div class="members-title">3D Animator</div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-6 p-1 p-md-3 col-lg-4">
                         <div class="card-members" data-aos="fade-up" data-aos-delay="1000">
                             <div class="card-shoot">
                                 <img src="assets/team/team-6.png" alt="" class="w-100 position-relative z-index-1">
@@ -151,7 +158,7 @@
     <section id="team-video">
         <div class="container">
             <div class="col-lg-10 offset-lg-1">
-                <div class="custom-video-wrapper" data-aos="skew-fade-up" data-aos-delay="500">
+                <div class="custom-video-wrapper" data-aos="fade-up" data-aos-delay="500">
                     <div class="custom-video">
                         <video id="custom-video" class="plyr" playsinline controls data-poster="assets/overlay-video.png">
                             <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
@@ -169,7 +176,7 @@
                         <div class="col-12">
                             <div class="cta-title text-center" data-aos="skew-fade-up" data-aos-delay="500">Got a project?</div>
                             <div class="cta-container">
-                                <a href="" class="cta-huge-button main" data-aos="zoom-in-up" data-aos-delay="500">
+                                <a href="booking.html" class="cta-huge-button main" data-aos="zoom-in-up" data-aos-delay="500">
                                     <span class="position-relative z-index-2 text">Schedule a Call</span>
                                     <span class="circle">
                                         <img src="assets/cta-arrow-green.svg" alt="" class="w-100">
@@ -187,10 +194,10 @@
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">
                     <div class="row align-items-center">
-                        <div class="col-3 pe-lg-4">
+                        <div class="col-3 pe-lg-4 d-none d-lg-flex">
                             <dotlottie-player src="json/footer.lottie" class="w-100" background="transparent" speed="0.8" loop autoplay></dotlottie-player>
                         </div>
-                        <div class="col-9">
+                        <div class="col-12 col-lg-9">
                             <div class="row">
                                 <div class="col-lg-10">
                                     <div class="footer-logo"><img src="assets/logo.svg" alt="" class="w-100"></div>
@@ -201,20 +208,19 @@
                                 <div class="col-4">
                                     <h3 class="footer-link-title">Industries</h3>
                                     <div class="footer-link">
-                                        <a href="">E-commerce</a>
-                                        <a href="">Startups</a>
-                                        <a href="">Gaming Studios</a>
-                                        <a href="">Companies</a>
+                                        <a href="e-commerce.html">E-commerce</a>
+                                        <a href="startups.html">Startups</a>
+                                        <a href="gaming-studio.html">Gaming Studios</a>
+                                        <a href="companies.html">Companies</a>
                                     </div>
                                 </div>
                                 <div class="col-4">
                                     <h3 class="footer-link-title">Pages</h3>
                                     <div class="footer-link">
-                                        <a href="">Services</a>
-                                        <a href="">Price</a>
-                                        <a href="">Team</a>
-                                        <a href="">Knowledge</a>
-                                        <a href="">Case Studies</a>
+                                        <a href="services.html">Services</a>
+                                        <a href="team.html">Team</a>
+                                        <a href="knowledge.html">Knowledge</a>
+                                        <a href="case-studies.html">Case Studies</a>
                                     </div>
                                 </div>
                                 <div class="col-4">

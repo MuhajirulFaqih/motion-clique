@@ -38,6 +38,7 @@
         <div class="container position-relative z-index-1">
             <div class="row">
                 <div class="col-12">
+                    <div class="nav-overlay"></div>
                     <div class="navigation">
                         <div class="nav-logo">
                             <span>
@@ -46,23 +47,29 @@
                         </div>
                         <div class="nav-menu">
                             <ul>
+                                <li class="text-end d-lg-none"><a href="javascript:void(0);" class="toggle-button"><img src="assets/icons/close.svg" alt=""></a></li>
+                                <li class="d-lg-none"><img src="assets/logo.svg" alt="" class="menu-logo"></li>
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="services.html" class="active">Services</a></li>
                                 <li><a href="team.html">Team</a></li>
                                 <li><a href="knowledge.html">Knowledge</a></li>
                                 <li><a href="case-studies.html">Case Studies</a></li>
+                                <li class="d-lg-none"><a href="booking.html" class="nav-button my-4">Booking Now</a></li>
                             </ul>
                         </div>
                         <div>
-                            <a href="" class="nav-button">Booking Now</a>
+                            <a href="booking.html" class="nav-button d-none d-lg-inline-block">Booking Now</a>
+                            <a href="javascript:void(0);" class="toggle-button">
+                                <img src="assets/icons/toggle.svg" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">
-                    <h1 class="hero-title services-title">Creative Solutions</h1>
-                    <h1 class="hero-title mb-2"><span>to Your Needs</span></h1>
+                    <h1 class="hero-title services-title text-center text-md-start">Creative Solutions</h1>
+                    <h1 class="hero-title mb-2 text-center text-md-start"><span>to Your Needs</span></h1>
                 </div>
             </div>
         </div>
@@ -73,10 +80,10 @@
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">
                     <div class="row overflow-hidden">
-                        <div class="col-lg-6 pe-2">
-                            <div class="service-line" data-aos="fade-right"></div>
+                        <div class="col-md-4 col-lg-6 pe-2">
+                            <div class="service-line d-none d-md-block" data-aos="fade-right"></div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-md-8 col-lg-6">
                             <div class="service-opener" data-aos="fade-left">
                                 We provide tailored animation solutions for a variety of sectors, ensuring that each of our offerings is designed to meet your specific business needs. Explore our service categories and see how our animations can elevate your project:
                             </div>
@@ -97,10 +104,10 @@
                         </div>
                     </div>
                     <div class="row mt-1 mt-lg-2 align-items-center">
-                        <div class="col-lg-6">
+                        <div class="col-md-7 col-lg-6">
                             <img src="assets/services/e-commerce.png" alt="" class="service-images" data-aos="fade-up" data-aos-delay="500">
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-md-5 col-lg-6">
                             <div class="services-cards">
                                 <div class="services-card-item" data-aos="fade-up" data-aos-delay="500">
                                     <h2 class="mb-1">Ad Roll or Google Ads Animations</h2>
@@ -124,7 +131,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 text-center mt-2 mt-lg-5">
+                        <div class="col-12 text-center mt-5">
                             <a href="e-commerce.html" class="btn-main" data-aos="fade-up">Learn More</a>
                         </div>
                     </div>
@@ -142,8 +149,8 @@
                             <div class="section-description text-center" data-aos="fade-up" data-aos-delay="500" data-aos-duration="800">We help startups create compelling presentations and clear product communication through animations designed to support your business growth.</div>
                         </div>
                     </div>
-                    <div class="row mt-1 mt-lg-2 align-items-center">
-                        <div class="col-lg-6">
+                    <div class="row mt-1 mt-lg-2 align-items-center flex-column-reverse flex-md-row">
+                        <div class="col-md-5 col-lg-6">
                             <div class="services-cards">
                                 <div class="services-card-item" data-aos="fade-up" data-aos-delay="500">
                                     <h2 class="mb-1">Animated Pitch Decks</h2>
@@ -172,11 +179,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-md-7 col-lg-6">
                             <img src="assets/services/startups.png" alt="" class="service-images" data-aos="fade-up" data-aos-delay="500">
                         </div>
-                        <div class="col-12 text-center mt-2 mt-lg-5">
-                            <a href="startup.html" class="btn-main" data-aos="fade-up">Learn More</a>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 text-center mt-5">
+                            <a href="startups.html" class="btn-main" data-aos="fade-up">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -197,7 +206,7 @@
                         <div class="col-12">
                             <img src="assets/services/gaming-studio.png" alt="" class="service-images" data-aos="fade-up" data-aos-delay="500">
                         </div>
-                        <div class="col-lg-6 pe-service-gaming">
+                        <div class="col-md-6 pe-service-gaming">
                             <div class="services-card-item" data-aos="fade-up" data-aos-delay="500">
                                 <h2 class="mb-1">Game Trailers</h2>
                                 <p>Build anticipation for your game release with cinematic or gameplay trailers.</p>
@@ -209,7 +218,7 @@
                                 <div class="services-card-line"></div>
                             </div>
                         </div>
-                        <div class="col-lg-6 ps-service-gaming">
+                        <div class="col-md-6 ps-service-gaming">
                             <div class="services-card-item" data-aos="fade-up" data-aos-delay="500">
                                 <h2 class="mb-1">In-Game Animation Assets</h2>
                                 <p>High-quality animated characters and assets that enhance the immersive experience.</p>
@@ -228,7 +237,7 @@
                                 <div class="services-card-line"></div>
                             </div>
                         </div>
-                        <div class="col-12 text-center mt-2 mt-lg-5">
+                        <div class="col-12 text-center mt-5">
                             <a href="gaming-studio.html" class="btn-main" data-aos="fade-up">Learn More</a>
                         </div>
                     </div>
@@ -247,10 +256,10 @@
                         </div>
                     </div>
                     <div class="row mt-1 mt-lg-2 align-items-center">
-                        <div class="col-lg-6">
+                        <div class="col-md-7 col-lg-6">
                             <img src="assets/services/companies.png" alt="" class="service-images" data-aos="fade-up" data-aos-delay="500">
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-md-5 col-lg-6">
                             <div class="services-cards">
                                 <div class="services-card-item" data-aos="fade-up" data-aos-delay="500">
                                     <h2 class="mb-1">Animated Corporate Presentations</h2>
@@ -274,7 +283,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 text-center mt-2 mt-lg-5">
+                        <div class="col-12 text-center mt-5">
                             <a href="companies.html" class="btn-main" data-aos="fade-up">Learn More</a>
                         </div>
                     </div>
@@ -289,7 +298,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="cta-container">
-                                <a href="" class="cta-huge-button" data-aos="zoom-in-up" data-aos-delay="500">
+                                <a href="booking.html" class="cta-huge-button" data-aos="zoom-in-up" data-aos-delay="500">
                                     <span class="position-relative z-index-2 text">Schedule a Call</span>
                                     <span class="circle">
                                         <img src="assets/cta-arrow.svg" alt="" class="w-100">
@@ -307,10 +316,10 @@
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">
                     <div class="row align-items-center">
-                        <div class="col-3 pe-lg-4">
+                        <div class="col-3 pe-lg-4 d-none d-lg-flex">
                             <dotlottie-player src="json/footer.lottie" class="w-100" background="transparent" speed="0.8" loop autoplay></dotlottie-player>
                         </div>
-                        <div class="col-9">
+                        <div class="col-12 col-lg-9">
                             <div class="row">
                                 <div class="col-lg-10">
                                     <div class="footer-logo"><img src="assets/logo.svg" alt="" class="w-100"></div>
@@ -321,20 +330,19 @@
                                 <div class="col-4">
                                     <h3 class="footer-link-title">Industries</h3>
                                     <div class="footer-link">
-                                        <a href="">E-commerce</a>
-                                        <a href="">Startups</a>
-                                        <a href="">Gaming Studios</a>
-                                        <a href="">Companies</a>
+                                        <a href="e-commerce.html">E-commerce</a>
+                                        <a href="startups.html">Startups</a>
+                                        <a href="gaming-studio.html">Gaming Studios</a>
+                                        <a href="companies.html">Companies</a>
                                     </div>
                                 </div>
                                 <div class="col-4">
                                     <h3 class="footer-link-title">Pages</h3>
                                     <div class="footer-link">
-                                        <a href="">Services</a>
-                                        <a href="">Price</a>
-                                        <a href="">Team</a>
-                                        <a href="">Knowledge</a>
-                                        <a href="">Case Studies</a>
+                                        <a href="services.html">Services</a>
+                                        <a href="team.html">Team</a>
+                                        <a href="knowledge.html">Knowledge</a>
+                                        <a href="case-studies.html">Case Studies</a>
                                     </div>
                                 </div>
                                 <div class="col-4">
