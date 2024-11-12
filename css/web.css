@@ -100,6 +100,14 @@ button, input {
     animation: slideImage 15s linear infinite;
 }
 
+.video-hero {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: -12%;
+    z-index: 1;
+}
+
 .navigation {
     padding-top: 32px;
     display: flex;
