@@ -1,5 +1,5 @@
 @media (max-width: 1280px){
-    .container {
+    .container, .portofolio-modal .modal-dialog {
         max-width: 1200px;
     }
     .team-card-opener h1 {
@@ -15,7 +15,7 @@
     }
 }
 @media (max-width: 1199.98px){
-    .container {
+    .container, .portofolio-modal .modal-dialog {
         max-width: 900px;
     }
 
@@ -63,7 +63,7 @@
 
 }
 @media (max-width: 991.98px) {
-    .container {
+    .container, .portofolio-modal .modal-dialog {
         max-width: 850px;
     }
     .hero-title {
@@ -294,7 +294,7 @@
         font-size: 14px;
         line-height: 21px;
     }    
-    .container {
+    .container, .portofolio-modal .modal-dialog {
         max-width: 700px;
     }
     .ps-service-gaming {
@@ -311,6 +311,10 @@
 @media (max-width: 575.98px) {
     .container {
         padding: 0px 20px;
+    }
+
+    .portofolio-modal .modal-dialog {
+        max-width: 480px;
     }
 
     section {
@@ -715,7 +719,7 @@
     }
 }
 @media (max-width: 360px) {
-    .container {
+    .container, .portofolio-modal .modal-dialog {
         max-width: 320px;
     }
 }
