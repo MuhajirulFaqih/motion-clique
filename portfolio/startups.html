@@ -1,1 +1,39 @@
-STARTUPS
+<section id="portfolio-body">
+    <div id="portfolio-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumbs services-title text-center text-md-start">
+                        <a href="portfolio.html">Portfolio</a>
+                        <span>/</span>
+                        <a href="javascript:void(0);" class="active">Startups</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="js/portfolio.js"></script>
+
+<script>
+    // Show all items on load
+    $('.content-item').fadeIn();
+   
+   // Filter items on button click
+   $('.porto-button').click(function() {
+       $(".porto-button").removeClass("active");
+       $(this).addClass("active");
+       $('.content-item').hide();
+       var category = $(this).data('filter');
+       
+       if (category === 'all') {
+           $('.content-item').fadeIn();
+       } else {
+           $('.' + category).fadeIn();
+       }
+   });
+</script>

@@ -11,15 +11,17 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-10 offset-lg-1 mt-portfolio">
-                    <h1 class="section-title text-center mb-3 mb-lg-5">E-Commerce</h1>
+                <div class="col-12 pt-3"><h1 class="section-title text-start mb-3 mt-3">E-Commerce</h1></div>
+                <div class="col-lg-2 mt-portfolio">
+                    <div class="portfolio-nav">
+                        <a href="javascript:void(0);" class="porto-button active" data-filter="all">All <span>(9)</span></a>
+                        <a href="javascript:void(0);" class="porto-button" data-filter="parfume">Parfume <span>(3)</span></a>
+                        <a href="javascript:void(0);" class="porto-button" data-filter="apparel">Apparel <span>(3)</span></a>
+                        <a href="javascript:void(0);" class="porto-button" data-filter="banners">Banners <span>(3)</span></a>
+                    </div>
+                </div>
+                <div class="col-lg-10 mt-portfolio">
                     <div class="row position-relative">
-                        <div class="portfolio-nav">
-                            <a href="javascript:void(0);" class="porto-button active" data-filter="all">All <span>(9)</span></a>
-                            <a href="javascript:void(0);" class="porto-button" data-filter="parfume">Parfume <span>(3)</span></a>
-                            <a href="javascript:void(0);" class="porto-button" data-filter="apparel">Apparel <span>(3)</span></a>
-                            <a href="javascript:void(0);" class="porto-button" data-filter="banners">Banners <span>(3)</span></a>
-                        </div>
                         <div class="col-md-4 content-item parfume px-3 py-4">
                             <div class="product-box">
                                 <img src="assets/portfolio/e-commerce/e-commerce-1.png" alt="">
@@ -130,8 +132,8 @@
     tabindex="-1"
     aria-labelledby="portoModalLabel"
     aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content" id="portfolio-bg">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" id="portfolio-bg" style="background: url('../assets/portfolio/e-commerce/slider/bg-slide-1.png') center center / cover no-repeat;">
             <div class="modal-body">
                 <div class="text-end project-close-button-outer">
                     <a href="javascript:void(0);" class="project-close-button" data-bs-dismiss="modal">
@@ -144,7 +146,7 @@
                             <div class="project-title-outer"><h1 class="project-title">Motion Design</h1></div>
                             <p class="project-desc">Lorem ipsum dolor sit amet consectetur. Duis nulla nam sed commodo eu. Id vulputate magna varius phasellus dolor cras arcu. Amet eu auctor vulputate id vulputate nulla varius volutpat sed. Vel duis at ut orci nulla turpis eget. Morbi facilisis ultricies eu quis hendrerit ac etiam. Ut augue sem elementum tellus ipsum vestibulum at convallis. Diam nisi dictum arcu nulla rhoncus velit. Amet tellus sagittis vel risus porttitor diam tellus.
                                 In sed urna consectetur nam maecenas eget. Sit pellentesque.</p>
-                            <a href="javascript:void(0);" class="lets-grow">Let's Grow</a>
+                            <a href="javascript:void(0);" class="lets-grow" data-bs-toggle="modal" data-bs-target="#portoForm">Let's Grow</a>
                         </div>
                         <div class="col-lg-7">
                             <div class="owl-carousel owl-theme owl-portfolio">
@@ -187,4 +189,69 @@
         </div>
     </div>
 </div>
+
+<div
+    class="modal portofolio-form-modal fade"
+    id="portoForm"
+    tabindex="-1"
+    aria-labelledby="portoFormLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="text-end">
+                    <a href="javascript:void(0);" class="form-close-button" data-bs-dismiss="modal">
+                        <img src="assets/icons/close.svg" alt="" class="w-100">
+                    </a>
+                </div>
+                <form action="" class="project-form">
+                    <div class="project-form-group">
+                        <label for="company">Company Name</label>
+                        <input type="text" name="company" placeholder="Enter your organization name">
+                    </div>
+                    <div class="project-form-group">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" placeholder="Enter your organization email">
+                    </div>
+                    <div class="project-form-group">
+                        <label for="project">Your Project</label>
+                        <textarea name="project" placeholder="Write here your ideas"></textarea>
+                    </div>
+                    <button type="submit" class="project-form-button">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 <script src="js/portfolio.js"></script>
+
+<script>
+    // Show all items on load
+    $('.content-item').fadeIn();
+   
+   // Filter items on button click
+   $('.porto-button').click(function() {
+       $(".porto-button").removeClass("active");
+       $(this).addClass("active");
+       $('.content-item').hide();
+       var category = $(this).data('filter');
+       
+       if (category === 'all') {
+           $('.content-item').fadeIn();
+       } else {
+           $('.' + category).fadeIn();
+       }
+   });
+
+  $(document).on('show.bs.modal', '.modal', function () {
+    var zIndex = 1050 + (10 * $('.modal:visible').length);
+    $(this).css('z-index', zIndex);
+    setTimeout(() => {
+      $('.modal-backdrop').not('.modal-stack').css('z-index', zIndex - 1).addClass('modal-stack');
+    }, 0);
+  });
+  
+  $(document).on('hidden.bs.modal', '.modal', function () {
+    $('.modal:visible').length && $('body').addClass('modal-open');
+  });
+</script>

@@ -13,8 +13,12 @@
         font-size: 36px;
         line-height: 54px;
     }
+
+    .portfolio-box {
+        height: 510px;
+    }
 }
-@media (max-width: 1199.98px){
+@media (max-width: 1199.98px) {
     .container, .portofolio-modal .modal-dialog {
         max-width: 900px;
     }
@@ -61,6 +65,80 @@
         line-height: 36px;
     }
 
+    /* Portfolio */
+    .portfolio-box {
+        padding: 20px;
+        border-radius: 40px;
+    }
+
+    .portfolio-box .portfolio-desc .icon {
+        padding: 22px;
+    }
+
+    .portfolio-box .portfolio-desc {
+        align-items: end;
+    }
+
+    .portfolio-box .portfolio-desc .icon span {
+        width: 32px;
+    }
+
+    .portfolio-box.active .portfolio-desc .contents h3,
+    .portfolio-box.active .portfolio-desc .contents p {
+        white-space: normal;
+    }
+
+    .portfolio-box .portfolio-desc .contents h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .portfolio-box .portfolio-desc .contents p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .product-box {
+        width: 100%;
+        height: 250px;
+    }
+
+    .product-box:hover {
+        height: 300px;
+    }
+
+    .product-box .product-box-content h4 {
+        margin-top: 16px;
+    }
+
+    .owl-portfolio .owl-stage {
+        margin-left: -100px;
+    }
+
+    .owl-portfolio-item {
+        height: 280px;
+    }
+
+    .owl-portfolio .owl-item.active.center .owl-portfolio-item {
+        height: 320px;
+    }
+
+    .portofolio-modal-content h1 {
+        font-size: 32px;
+    }
+
+    .project-title-outer {
+        height: 56px;
+    }
+
+    .portofolio-modal-content p {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .owl-portfolio .owl-stage {
+        height: 348px;
+    }
 }
 @media (max-width: 991.98px) {
     .container, .portofolio-modal .modal-dialog {
@@ -287,6 +365,28 @@
 
     .cs-icons {
         margin-bottom: 56px;
+    }
+
+    .portfolio-outer {
+        flex-direction: column;
+        gap: 24px;
+        padding-bottom: 48px;
+    }
+
+    .portfolio-box, .portfolio-box.active {
+        width: 100%;
+    }
+
+    .portfolio-box {
+        height: 120px;
+    }
+
+    .portfolio-box.active {
+        height: 300px;
+    }
+
+    #portfolio-body {
+        margin-top: 48px;
     }
 }
 @media (max-width: 800.98px) {
